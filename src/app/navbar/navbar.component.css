@@ -1,0 +1,75 @@
+.Navbar{
+    background-color: #F8F7FF;
+    min-height: 300px;
+}
+
+.Navbar_Inner{
+    display: flex;
+    font-family: 'Noto Serif', serif;
+    font-size: 1rem;
+    justify-content: space-between;
+    margin: 16px;
+}
+.Navbar_Inner h2{
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+} 
+
+.Navbar_Inner > button{
+    background-color: #F8F7FF;
+    border: none;
+    font-size: 1rem;
+    font-family: 'Noto Serif', serif;
+    color: #000000;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 5px;
+    border: #000000 1px solid;
+    display: none;
+}
+
+.Navbar_Inner_Sec > a{
+    color: #000000;
+    text-decoration: none;
+    margin: 0 16px;
+    display: none;
+}
+
+.Navbar_Inner_Sec > a:hover{
+    color: #B8B8FF;
+}
+    
+
+
+@media screen and (min-width: 600px){
+    .Nav_Bar{
+        display:none;
+    }
+
+    .Navbar_Inner_Sec {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Navbar_Inner_Sec > a{
+        display: flex;
+    }
+    .Navbar_Inner > button{
+        display: block;
+    }
+
+    .Navbar_Inner > button:hover{
+        background-color: #B8B8FF ;
+        color: #FFFFFF;
+    }
+    
+    
+}
+
+
+

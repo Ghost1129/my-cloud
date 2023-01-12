@@ -1,0 +1,46 @@
+.About_Main{
+    background-color: #F8F7FF;
+    padding: 40px 50px;
+    margin-top: -100px;
+    font-family: 'Noto Serif', serif;
+}
+.About_Main h2{
+    text-align: center;
+    font-size: 2.5em;
+    padding-bottom: 40px;
+}
+
+.About_Inner{
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.About_Inner_Content{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.About_Inner_Content h3{
+    font-size: 1.5em;
+    padding: 20px 0;
+}
+
+
+
+@media screen and (min-width: 768px){
+
+    .About_Main{
+        padding: 40px 160px 40px 160px ;
+    }
+    .About_Inner{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .About_Inner_Content{
+        width: 30%;
+    }
+}
+
