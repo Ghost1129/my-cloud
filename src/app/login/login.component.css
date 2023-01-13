@@ -1,0 +1,90 @@
+.login_main{
+    display: flex;
+    overflow: hidden;
+    font-family: 'Noto Serif', serif;
+
+}
+
+.login_nav{
+    height: 100vh;
+    width: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    /* background-color: aqua; */
+    
+}
+.icon{
+    width: 200px;
+}
+
+.logo{
+    cursor: pointer;
+    align-self: center;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+
+
+.login_nav_instance{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+.login_nav_instance:hover .login_instance_hover{
+    opacity: 1;
+}
+
+
+.login_instance_hover{
+    position: absolute;
+    top: 0;
+    left: 300%;
+    background: rgb(238, 72, 72);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.login_nav_user{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+.login_nav_user:hover .login_nav_user_hover{
+    opacity: 1;
+}
+
+.login_nav_user_hover{
+    position: absolute;
+    top: 20px;
+    right: 0;
+    background: rgb(238, 72, 72);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+
+/* Body */
+.login_body{
+    position: relative;
+    width: 92%;
+}
+
+.login_body img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+    object-fit: cover;
+    z-index: -1;
+}
