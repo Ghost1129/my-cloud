@@ -1,0 +1,155 @@
+.instance_main{
+    display: flex;
+    overflow: hidden;
+    font-family: 'Noto Serif', serif;
+
+}
+
+.instance_nav{
+    height: 100vh;
+    width: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    /* background-color: aqua; */
+    
+}
+.icon{
+    width: 200px;
+}
+
+.logo{
+    cursor: pointer;
+    align-self: center;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+
+
+.instance_nav_instance{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+.instance_nav_instance:hover .instance_instance_hover{
+    display: flex;
+}
+
+
+.instance_instance_hover{
+    position: absolute;
+    top: -20px;
+    left: 70%;
+    background-color: beige;
+    display: none;
+    transition: all 0.3s ease;
+    padding: 10px;
+    flex-direction: column;
+}
+.instance_instance_hover span{
+    padding: 8px 0;
+}
+
+.instance_instance_hover span:hover{
+    color: white;
+}
+
+.instance_nav_user{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+.instance_nav_user:hover .instance_nav_user_hover{
+    display: flex;
+}
+
+.instance_nav_user_hover{
+    position: absolute;
+    top: 10px;
+    left: 70%;
+    background-color: beige;
+    display: none;
+    transition: all 0.3s ease;
+    padding: 10px;
+    flex-direction: column;
+}
+.instance_nav_user_hover:hover{
+    display: flex;
+}
+
+.instance_nav_user_hover span{
+    padding: 8px 0;
+}
+
+
+/* Body */
+.instance_body{
+    position: relative;
+    width: 92%;
+}
+
+.instance_body img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+    object-fit: cover;
+    z-index: 1;
+}
+
+.instance_container{
+    height: 100%;
+    width: 60%;
+    padding:16px;
+}
+
+.instance_container button{
+    padding: 10px 20px;
+    border: none;
+    background-color: #1e88e5;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.instance_container button:hover{
+    background-color: #1565c0;
+}
+
+
+.instance_instances{
+    width: 90%;
+    margin: 20px auto;
+}
+
+.instance_instances_tags{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.instance_instances_server{
+    padding: 6px 20px;
+    background-color: aquamarine;
+    max-height: 550px;
+    overflow-y: scroll;
+    margin-top: 20px;
+}
+
+.servers{
+    
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}

@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { faUser , faServer } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: 'app-instance',
+  templateUrl: './instance.component.html',
+  styleUrls: ['./instance.component.css']
 })
-export class LoginComponent {
+export class InstanceComponent {
   faUser = faUser;
   faServer = faServer;
 }
